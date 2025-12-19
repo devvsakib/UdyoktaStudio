@@ -8,7 +8,7 @@ const translations = {
             process: "Process",
             contact: "Contact"
         },
-         hero: {
+        hero: {
             badge: "From Page to Brand",
             headline: "Transform Your Social Shop Into a Trusted Online Business",
             subheadline: "We build premium e-commerce websites for Bangladeshi Facebook & Instagram sellers. Stop losing customers to trust issues.",
@@ -20,7 +20,7 @@ const translations = {
                 { value: "24/7", label: "Support" }
             ]
         },
-         problem: {
+        problem: {
             title: "Why Social-Only Selling Holds You Back",
             items: [
                 { icon: Shield, title: "Low Trust", desc: "Customers fear fake pages and scams" },
@@ -163,7 +163,12 @@ const translations = {
             subheadline: "আমরা বাংলাদেশি সেলারের জন্য আধুনিক ই-কমার্স ওয়েবসাইট তৈরি করি যা গ্রাহকরা বিশ্বাস করে, সহজে অর্ডার দেয় এবং আপনার ব্যবসা বৃদ্ধি করতে সাহায্য করে।",
             primaryCta: "ডেমো স্টোর দেখুন",
             secondaryCta: "WhatsApp এ চ্যাট করুন",
-            trustPoints: ["বাংলাদেশি সেলারের জন্য", "মোবাইল-ফার্স্ট ও দ্রুত", "বাস্তব ডেমো, কোন মিথ্যা প্রতিশ্রুতি নয়"]
+            trustPoints: ["বাংলাদেশি সেলারের জন্য", "মোবাইল-ফার্স্ট ও দ্রুত", "বাস্তব ডেমো, কোন মিথ্যা প্রতিশ্রুতি নয়"],
+            stats: [
+                { value: "৫০+", label: "সফল গ্রাহক" },
+                { value: "৯৯%", label: "সফলতা" },
+                { value: "২৪/১১", label: "সাহায্য" }
+            ]
         },
         problem: {
             title: "কেন শুধু Facebook / Instagram যথেষ্ট নয়",
@@ -175,7 +180,13 @@ const translations = {
                 "প্রিপেইড অর্ডার পাওয়া কঠিন",
                 "কোন ব্র্যান্ড ভ্যালু বা বৃদ্ধির সিস্টেম নেই"
             ],
-            closing: "আপনার কাছে ট্রাফিক আছে, কিন্তু বিশ্বাস নেই।"
+            closing: "আপনার কাছে ট্রাফিক আছে, কিন্তু বিশ্বাস নেই।",
+            items: [
+                { icon: Shield, title: "লোকপূর্ণ বিশ্বাস", desc: "গ্রাহকরা পুরোপুরি বিশ্বাস করে না" },
+                { icon: MessageCircle, title: "ইনবক্স ওভারলোড", desc: "মিসড অর্ডার" },
+                { icon: TrendingUp, title: "স্কেল নেই", desc: "বিশ্বাস নেই" },
+                { icon: BarChart3, title: "অনালিটিক্স নেই", desc: "সংক্রামক আপনাকে পিছিয়ে রাখে" }
+            ]
         },
         solution: {
             title: "সমাধান: একটি সঠিক ই-কমার্স ওয়েবসাইট",
@@ -185,6 +196,12 @@ const translations = {
                 { icon: Smartphone, text: "পারফেক্ট মোবাইল অভিজ্ঞতা" },
                 { icon: Zap, text: "দ্রুত ও আধুনিক ইন্টারফেস" },
                 { icon: TrendingUp, text: "বিজ্ঞাপন ও স্কেলিং এর জন্য প্রস্তুত" }
+            ],
+            features: [
+                { icon: TrendingUp, title: "স্কেলিং", desc: "অনেকের সাথে প্রস্তুত স্কেলিং সিস্টেম" },
+                { icon: BarChart3, title: "অনালিটিক্স", desc: "সংক্রামক আপনাকে পিছিয়ে রাখে" },
+                { icon: MessageCircle, title: "ইনবক্স ওভারলোড", desc: "মিসড অর্ডার" },
+                { icon: Shield, title: "লোকপূর্ণ বিশ্বাস", desc: "গ্রাহকরা পুরোপুরি বিশ্বাস করে না" }
             ]
         },
         demo: {
@@ -271,6 +288,33 @@ const translations = {
                         { name: "Render", icon: "https://cdn.sanity.io/images/34ent8ly/production/ec37a3660704e1fa2b4246c9a01ab34e145194ad-824x824.png" }
                     ]
                 }
+            }
+        },
+        pricing: {
+            title: "Pricing",
+            badge: "Simple, Transparent Process",
+            starter: {
+                name: "Starter",
+                label: "Most Popular",
+                price: "৳ 5,000",
+                features: ["৫-১০ Products", "Mobile Optimized", "WhatsApp Integration", "Basic Support", "১ সপ্তাহ Delivery"],
+                ctaSuccess: "Thank You!",
+                cta: "Get Started"
+            },
+            growth: {
+                name: "Growth",
+                label: "Most Popular",
+                price: "৳ 35,000",
+                features: ["Unlimited Products", "Advanced Features", "FB/IG Pixel Setup", "Priority Support", "Analytics Dashboard", "৩ মাস Free Updates"],
+                cta: "Get Started"
+            },
+            enterprise: {
+                name: "Enterprise",
+                label: "Most Popular",
+                price: "Custom",
+                caption: "UdyoktaStudio helps Bangladeshi Facebook & Instagram sellers build real online businesses.",
+                features: ["Growth এর সবকিছু", "Payment Gateway", "Custom Integrations", "Dedicated Manager", "Lifetime Updates"],
+                cta: "Let's Talk"
             }
         }
     }

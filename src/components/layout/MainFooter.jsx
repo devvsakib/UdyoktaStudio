@@ -4,7 +4,7 @@ function MainFooter() {
     const { theme, t } = useApp();
 
     return (
-        <footer className={`py-12 border-t ${theme === 'dark' ? 'bg-slate-950 border-slate-800' : 'bg-slate-50 border-slate-200'
+        <footer className={`z-50 py-12 border-t ${theme === 'dark' ? 'bg-slate-950 border-slate-800' : 'bg-slate-50 border-slate-200'
             }`}>
             <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto">

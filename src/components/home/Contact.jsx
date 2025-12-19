@@ -6,7 +6,7 @@ function Contact() {
     const { theme, t } = useApp();
 
     return (
-        <section id="contact" className={`py-20 ${theme === 'dark' ? 'bg-slate-900' : 'bg-white'}`}>
+        <section id="contact" className={`py-20 z-40 ${theme === 'dark' ? 'bg-slate-900' : 'bg-white'}`}>
             <div className="container mx-auto px-4">
                 <div
                     className="max-w-3xl mx-auto text-center"

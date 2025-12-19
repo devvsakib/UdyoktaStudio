@@ -6,7 +6,7 @@ function Pricing() {
   const isDark = theme === "dark";
 
   return (
-    <section id="pricing" className="py-24">
+    <section id="pricing" className="py-24 min-h-screen grid place-content-center">
       <div className="relative mx-auto max-w-5xl">
         <div className="mb-12 text-center">
           <p className="text-xs font-medium uppercase tracking-[0.2em] text-purple-400">

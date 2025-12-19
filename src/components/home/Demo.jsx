@@ -10,12 +10,11 @@ function Demo() {
     return (
         <section
             id="demo"
-            className={`relative py-24 overflow-hidden ${isDark ? "bg-slate-900" : "bg-white"
-                }`}
+            className={`relative py-24 overflow-hidden ${isDark ? "bg-slate-900" : "bg-white"}`}
         >
             {/* background glow */}
             <div className="pointer-events-none absolute inset-0 flex justify-center">
-                <div className="h-[420px] w-[420px] rounded-full bg-purple-500/10 blur-3xl" />
+                <div className="h-105 w-105 rounded-full bg-purple-500/10 blur-3xl" />
             </div>
 
             <div className="relative container mx-auto px-4">
@@ -31,8 +30,8 @@ function Demo() {
                         <div className="mb-6 flex justify-center">
                             <div
                                 className={`inline-flex h-16 w-16 items-center justify-center rounded-2xl ${isDark
-                                        ? "bg-purple-500/10 text-purple-400"
-                                        : "bg-purple-100 text-purple-600"
+                                    ? "bg-purple-500/10 text-purple-400"
+                                    : "bg-purple-100 text-purple-600"
                                     }`}
                             >
                                 <LayoutTemplate size={32} />
@@ -65,15 +64,15 @@ function Demo() {
                                 transition={{ delay: i * 0.1 }}
                                 whileHover={{ y: -6 }}
                                 className={`group rounded-2xl border overflow-hidden transition-all ${isDark
-                                        ? "border-slate-700 bg-slate-800"
-                                        : "border-slate-200 bg-white"
+                                    ? "border-slate-700 bg-slate-800"
+                                    : "border-slate-200 bg-white"
                                     }`}
                             >
                                 {/* Placeholder Image */}
                                 <div
                                     className={`relative flex h-44 items-center justify-center ${isDark
-                                            ? "bg-gradient-to-br from-slate-700 to-slate-800"
-                                            : "bg-gradient-to-br from-slate-100 to-slate-200"
+                                        ? "bg-gradient-to-br from-slate-700 to-slate-800"
+                                        : "bg-gradient-to-br from-slate-100 to-slate-200"
                                         }`}
                                 >
                                     <ImageIcon
@@ -101,8 +100,8 @@ function Demo() {
                                     <Link
                                         to={demo.link}
                                         className={`inline-flex items-center gap-2 text-sm font-medium ${isDark
-                                                ? "text-purple-400 hover:text-purple-300"
-                                                : "text-purple-600 hover:text-purple-700"
+                                            ? "text-purple-400 hover:text-purple-300"
+                                            : "text-purple-600 hover:text-purple-700"
                                             }`}
                                     >
                                         View Demo

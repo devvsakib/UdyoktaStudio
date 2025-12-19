@@ -48,14 +48,14 @@ function MainHeader() {
                     </div>
 
                     <div className="flex items-center gap-3">
-                        <motion.button
+                        {/* <motion.button
                             whileHover={{ scale: 1.1 }}
                             whileTap={{ scale: 0.9 }}
                             onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
                             className="p-2 rounded-lg bg-white/5 hover:bg-white/10 backdrop-blur-sm border border-white/10"
                         >
                             {theme === 'dark' ? <Sun size={18} className="text-yellow-400" /> : <Moon size={18} />}
-                        </motion.button>
+                        </motion.button> */}
 
                         <motion.button
                             whileHover={{ scale: 1.1 }}
