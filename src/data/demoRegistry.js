@@ -4,6 +4,7 @@ import { lazy } from 'react';
 export const demoComponents = {
     // সিঙ্গেল প্রোডাক্ট টেমপ্লেট বা ডেডিকেটেড পেজসমূহ
     book: lazy(() => import('@/pages/demo/BookDemoPage')),
+    grocery: lazy(() => import('@/pages/demo/GroceryDemoPage')),
     // ভবিষ্যতে আরেকটি বই বা সিঙ্গেল প্রোডাক্ট যোগ করতে চাইলে জাস্ট এভাবে লিখবেন:
     // mango: lazy(() => import('@/pages/demo/MangoDemoPage')),
 };
@@ -35,6 +36,13 @@ export const allDemos = [
         name: "Premium Book Landing Page",
         desc: "Single-product showcase designed specifically for authors, publishers, and literary competitions.",
         category: "Books & Literature",
+        type: "custom"
+    },
+    {
+        slug: "grocery",
+        name: "Organic Food & Grocery Store",
+        desc: "Premium grocery landing interface modeled after industry standards, featuring fluid category filtering and instant drawer cart calculations.",
+        category: "Organic & Grocery",
         type: "custom"
     }
 ];
