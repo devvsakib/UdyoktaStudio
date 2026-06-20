@@ -1,4 +1,4 @@
-import { Shield, Smartphone, Zap, TrendingUp, MessageCircle, BarChart3 } from "lucide-react";
+import { Shield, Smartphone, Zap, TrendingUp, MessageCircle, BarChart3, ShoppingCart, Package, ShieldCheck, MessageSquareX, TrendingDown, Clock3, ShieldAlert } from "lucide-react";
 
 const translations = {
     en: {
@@ -6,6 +6,7 @@ const translations = {
             services: "Services",
             demo: "Demo",
             process: "Process",
+            price: "Pricing",
             contact: "Contact"
         },
         hero: {
@@ -23,20 +24,36 @@ const translations = {
         problem: {
             title: "Why Social-Only Selling Holds You Back",
             items: [
-                { icon: Shield, title: "Low Trust", desc: "Customers fear fake pages and scams" },
-                { icon: MessageCircle, title: "Inbox Chaos", desc: "Lost orders in message floods" },
-                { icon: TrendingUp, title: "No Growth", desc: "Can't scale without systems" },
-                { icon: BarChart3, title: "No Analytics", desc: "Flying blind without data" }
+                {
+                    icon: MessageSquareX,
+                    title: "Inbox Jam & Customer Dropout",
+                    desc: "If you delay replying by just 5 minutes, customers jump to another page. Sitting in the inbox 24/7 to manually take orders and track stock is nearly impossible."
+                },
+                {
+                    icon: TrendingDown,
+                    title: "Trapped in the Facebook Algorithm",
+                    desc: "Page reach is high today, but completely down tomorrow. Due to sudden social media algorithm changes, your hard-earned audience can disappear at any time."
+                },
+                {
+                    icon: Clock3,
+                    title: "Chaos in Order Tracking & Accounts",
+                    desc: "Who paid via bKash, whose order got delivered, and whose is pending—matching these records by scrolling through messages or notebooks wastes hours every single day."
+                },
+                {
+                    icon: ShieldAlert,
+                    title: "Lack of Brand Value & Trust",
+                    desc: "Amidst thousands of fake online pages, customers hesitate to make big orders or fully trust just a Facebook page, which directly drops your sales."
+                }
             ]
         },
         solution: {
             title: "The Professional Website Advantage",
             desc: "A modern e-commerce website transforms how customers see your business",
             features: [
-                { title: "Instant Credibility", desc: "Professional design builds trust immediately" },
-                { title: "Organized Orders", desc: "No more missed sales in inbox chaos" },
-                { title: "Mobile Optimized", desc: "Perfect experience on any device" },
-                { title: "Ready to Scale", desc: "Grow with Facebook & Instagram ads" }
+                { icon: Shield, title: "Instant Credibility", desc: "Professional design builds trust immediately" },
+                { icon: MessageCircle, title: "Organized Orders", desc: "No more missed sales in inbox chaos" },
+                { icon: Smartphone, title: "Mobile Optimized", desc: "Perfect experience on any device" },
+                { icon: TrendingUp, title: "Ready to Scale", desc: "Grow with Facebook & Instagram ads" }
             ]
         },
         demo: {
@@ -117,31 +134,29 @@ const translations = {
             email: "Send an Email",
             demo: "View Demo"
         },
-        // t.pricing.pro.features
         pricing: {
             title: "Pricing",
-            badge: "Simple, Transparent Process",
+            badge: "Simple, Transparent Pricing",
             starter: {
                 name: "Starter",
-                label: "Most Popular",
+                label: "Popular",
                 price: "৳ 5,000",
-                features: ["৫-১০ Products", "Mobile Optimized", "WhatsApp Integration", "Basic Support", "১ সপ্তাহ Delivery"],
-                ctaSuccess: "Thank You!",
+                features: ["5-10 Products", "Mobile Optimized", "WhatsApp Integration", "Basic Support", "1 Week Delivery"],
                 cta: "Get Started"
             },
             growth: {
                 name: "Growth",
                 label: "Most Popular",
                 price: "৳ 35,000",
-                features: ["Unlimited Products", "Advanced Features", "FB/IG Pixel Setup", "Priority Support", "Analytics Dashboard", "৩ মাস Free Updates"],
+                features: ["Unlimited Products", "Advanced Features", "FB/IG Pixel Setup", "Priority Support", "Analytics Dashboard", "3 Months Free Updates"],
                 cta: "Get Started"
             },
             enterprise: {
                 name: "Enterprise",
-                label: "Most Popular",
+                label: "Custom Solution",
                 price: "Custom",
                 caption: "UdyoktaStudio helps Bangladeshi Facebook & Instagram sellers build real online businesses.",
-                features: ["Growth এর সবকিছু", "Payment Gateway", "Custom Integrations", "Dedicated Manager", "Lifetime Updates"],
+                features: ["Everything in Growth", "Payment Gateway Integration", "Custom Integrations", "Dedicated Account Manager", "Lifetime Security Updates"],
                 cta: "Let's Talk"
             }
         },
@@ -153,108 +168,85 @@ const translations = {
     },
     bn: {
         nav: {
-            services: "সেবা",
+            services: "সেবাসমূহ",
             demo: "ডেমো",
-            process: "প্রক্রিয়া",
+            process: "কাজের প্রক্রিয়া",
+            price: "প্যাকেজ ও মূল্য",
             contact: "যোগাযোগ"
         },
         hero: {
-            headline: "আপনার Facebook ও Instagram পেজকে একটি বিশ্বাসযোগ্য অনলাইন ব্যবসায় পরিণত করুন",
-            subheadline: "আমরা বাংলাদেশি সেলারের জন্য আধুনিক ই-কমার্স ওয়েবসাইট তৈরি করি যা গ্রাহকরা বিশ্বাস করে, সহজে অর্ডার দেয় এবং আপনার ব্যবসা বৃদ্ধি করতে সাহায্য করে।",
-            primaryCta: "ডেমো স্টোর দেখুন",
-            secondaryCta: "WhatsApp এ চ্যাট করুন",
-            trustPoints: ["বাংলাদেশি সেলারের জন্য", "মোবাইল-ফার্স্ট ও দ্রুত", "বাস্তব ডেমো, কোন মিথ্যা প্রতিশ্রুতি নয়"],
+            badge: "পেজ থেকে ব্র্যান্ড",
+            headline: "আপনার Facebook ও Instagram পেজকে একটি বিশ্বাসযোগ্য অনলাইন ব্যবসায় রূপান্তর করুন",
+            subheadline: "আমরা বাংলাদেশি সেলারদের জন্য প্রিমিয়াম ই-কমার্স ওয়েবসাইট তৈরি করি। ট্রাস্ট ইস্যু বা বিশ্বাসের অভাবে আর কোন কাস্টমার হারাবেন না।",
+            primaryCta: "লাইভ ডেমো দেখুন",
+            secondaryCta: "প্রজেক্ট শুরু করুন",
             stats: [
-                { value: "৫০+", label: "সফল গ্রাহক" },
+                { value: "৫০+", label: "সন্তুষ্ট কাস্টমার" },
                 { value: "৯৯%", label: "সফলতা" },
-                { value: "২৪/১১", label: "সাহায্য" }
+                { value: "২৪/৭", label: "সাপোর্ট" }
             ]
         },
         problem: {
-            title: "কেন শুধু Facebook / Instagram যথেষ্ট নয়",
-            points: [
-                "গ্রাহকরা Facebook পেজকে পুরোপুরি বিশ্বাস করে না",
-                "গ্রাহকরা Instagram পেজকে পুরোপুরি বিশ্বাস করে না",
-                "গ্রাহকরা আপনার ওয়েবসাইটকে পুরোপুরি বিশ্বাস করে না",
-                "ইনবক্স ওভারলোড → মিসড অর্ডার",
-                "প্রিপেইড অর্ডার পাওয়া কঠিন",
-                "কোন ব্র্যান্ড ভ্যালু বা বৃদ্ধির সিস্টেম নেই"
-            ],
-            closing: "আপনার কাছে ট্রাফিক আছে, কিন্তু বিশ্বাস নেই।",
+            title: "শুধু ফেসবুক বা ইনস্টাগ্রাম পেজে ব্যবসা করার অসুবিধা",
             items: [
-                { icon: Shield, title: "লোকপূর্ণ বিশ্বাস", desc: "গ্রাহকরা পুরোপুরি বিশ্বাস করে না" },
-                { icon: MessageCircle, title: "ইনবক্স ওভারলোড", desc: "মিসড অর্ডার" },
-                { icon: TrendingUp, title: "স্কেল নেই", desc: "বিশ্বাস নেই" },
-                { icon: BarChart3, title: "অনালিটিক্স নেই", desc: "সংক্রামক আপনাকে পিছিয়ে রাখে" }
+                {
+                    icon: MessageSquareX,
+                    title: "ইনবক্স জ্যাম ও কাস্টমার ড্রপআউট",
+                    desc: "কাস্টমার মেসেজ দেওয়ার পর রিপ্লাই দিতে ৫ মিনিট দেরি হলেই তারা অন্য পেজে চলে যায়। ২৪ ঘণ্টা ইনবক্সে বসে ম্যানুয়ালি অর্ডার নেওয়া এবং স্টক ট্র্যাক করা প্রায় অসম্ভব।"
+                },
+                {
+                    icon: TrendingDown,
+                    title: "ফেসবুক অ্যালগরিদমের খাঁচায় বন্দি",
+                    desc: "আজ পেজের রিচ ভালো তো কাল একদম ডাউন। সোশ্যাল মিডিয়ার নিজস্ব অ্যালগরিদম চেঞ্জের কারণে আপনার এতদিনের জমানো অডিয়েন্স যেকোনো সময় হাতছাড়া হতে পারে।"
+                },
+                {
+                    icon: Clock3,
+                    title: "অর্ডার ট্র্যাকিং ও হিসাবের গোলমাল",
+                    desc: "কে বিকাশ বা bKash-এ পেমেন্ট করলো, কার অর্ডার ডেলিভারি হলো আর কারটা পেন্ডিং—খাতায় বা মেসেজ স্ক্রোল করে এই হিসাব মেলাতে গিয়ে প্রতিদিন ঘণ্টার পর ঘণ্টা সময় নষ্ট হয়।"
+                },
+                {
+                    icon: ShieldAlert,
+                    title: "ব্র্যান্ড ভ্যালু ও বিশ্বাসের অভাব",
+                    desc: "অনলাইনে হাজারো ফেক পেজের ভিড়ে কাস্টমাররা শুধু একটি ফেসবুক পেজ দেখে বড় অ্যামাউন্টের অর্ডার করতে বা ট্রাস্ট করতে দ্বিধাবোধ করে, যা আপনার সেলস কমিয়ে দেয়।"
+                }
             ]
         },
         solution: {
-            title: "সমাধান: একটি সঠিক ই-কমার্স ওয়েবসাইট",
-            description: "আমরা আপনার সোশ্যাল মিডিয়া শপকে একটি বাস্তব ওয়েবসাইটে রূপান্তর করি যা ক্রেতাদের কাছে বিশ্বাসযোগ্য মনে হয় এবং অর্ডার প্রক্রিয়াটিকে সহজ করে।",
-            benefits: [
-                { icon: Shield, text: "পেশাদার ও বিশ্বাসযোগ্য লুক" },
-                { icon: Smartphone, text: "পারফেক্ট মোবাইল অভিজ্ঞতা" },
-                { icon: Zap, text: "দ্রুত ও আধুনিক ইন্টারফেস" },
-                { icon: TrendingUp, text: "বিজ্ঞাপন ও স্কেলিং এর জন্য প্রস্তুত" }
-            ],
+            title: "একটি প্রফেশনাল ওয়েবসাইটের সুবিধা",
+            desc: "একটি আধুনিক ই-কমার্স ওয়েবসাইট ক্রেতাদের কাছে আপনার ব্যবসার রূপ বদলে দেয়",
             features: [
-                { icon: TrendingUp, title: "স্কেলিং", desc: "অনেকের সাথে প্রস্তুত স্কেলিং সিস্টেম" },
-                { icon: BarChart3, title: "অনালিটিক্স", desc: "সংক্রামক আপনাকে পিছিয়ে রাখে" },
-                { icon: MessageCircle, title: "ইনবক্স ওভারলোড", desc: "মিসড অর্ডার" },
-                { icon: Shield, title: "লোকপূর্ণ বিশ্বাস", desc: "গ্রাহকরা পুরোপুরি বিশ্বাস করে না" }
+                { icon: Shield, title: "তাৎক্ষণিক নির্ভরযোগ্যতা", desc: "প্রফেশনাল ডিজাইন ক্রেতাদের মনে দ্রুত বিশ্বাস তৈরি করে" },
+                { icon: MessageCircle, title: "গোছানো অর্ডার ম্যানেজমেন্ট", desc: "ইনবক্সের মেসেজের জটলা এড়িয়ে সহজেই সব অর্ডার এক জায়গায়" },
+                { icon: Smartphone, title: "পারফেক্ট মোবাইল এক্সপেরিয়েন্স", desc: "যেকোনো স্মার্টফোনে কাস্টমার পাবেন সুপার-ফাস্ট ব্রাউজিং" },
+                { icon: TrendingUp, title: "স্কেলিংয়ের জন্য প্রস্তুত", desc: "Facebook এবং Instagram বিজ্ঞাপনের মাধ্যমে সেল বাড়ানোর সুবিধা" }
             ]
         },
         demo: {
-            title: "সিদ্ধান্ত নেওয়ার আগে একটি ডেমো দেখুন",
-            text: "আমরা শুধু কথা বলি না — আমরা লাইভ ডেমো দেখাই।",
-            cta: "লাইভ ডেমো স্টোর খুলুন",
-            note: "কোন সাইনআপের প্রয়োজন নেই",
+            title: "সিদ্ধান্ত নেওয়ার আগে লাইভ ডেমো দেখে নিন",
+            text: "আমরা শুধু মুখে বলি না — সরাসরি লাইভ ডেমো স্টোর দেখাই।",
+            cta: "লাইভ ডেমো স্টোর ভিজিট করুন",
+            note: "কোনো সাইন-আপের প্রয়োজন নেই",
             demoList: [
-                { name: "Fashion Demo", link: "/demo/fashion" },
-                { name: "Cosmetics Demo", link: "/demo/cosmetics" },
-                { name: "Gadgets Demo", link: "/demo/gadgets" },
+                { name: "ফ্যাশন ডেমো", link: "/demo/fashion" },
+                { name: "কসমেটিকস ডেমো", link: "/demo/cosmetics" },
+                { name: "গ্যাজেটস ডেমো", link: "/demo/gadgets" },
             ]
         },
         services: {
-            title: "আমরা আপনার জন্য যা তৈরি করি",
+            title: "আমরা আপনার জন্য যা তৈরি করব",
             list: [
-                "কাস্টম ই-কমার্স ওয়েবসাইট",
-                "মোবাইল-ফার্স্ট আধুনিক UI",
-                "পণ্য ও অর্ডার ম্যানেজমেন্ট",
-                "WhatsApp অর্ডার ইন্টিগ্রেশন",
-                "Facebook / Instagram পিক্সেল রেডি",
-                "দ্রুত ও নিরাপদ সেটআপ"
+                "কাস্টম ই-কমার্স ওয়েবসাইট",
+                "মোবাইল-ফার্স্ট আধুনিক ইউজার ইন্টারফেস (UI)",
+                "প্রোডাক্ট ও অর্ডার ম্যানেজমেন্ট প্যানেল",
+                "WhatsApp সরাসরি অর্ডার ইন্টিগ্রেশন",
+                "Facebook ও Instagram পিক্সেল সেটআপ",
+                "দ্রুত ও সম্পূর্ণ নিরাপদ সেটআপ"
             ],
-            note: "বাংলাদেশি ক্রেতার আচরণকে মাথায় রেখে ডিজাইন করা হয়েছে"
-        },
-        contact: {
-            title: "চলুন আপনার ব্যবসার জন্য বিশ্বাস তৈরি করি",
-            subtitle: "কোন চাপ নেই। কোন মিথ্যা প্রতিশ্রুতি নেই। শুধু সৎ কথোপকথন।",
-            whatsapp: "WhatsApp এ চ্যাট করুন",
-            email: "ইমেইল পাঠান",
-            call: "ফোন করুন",
-            demo: "ডেমো দেখুন",
-            note: "কোন সাইনআপের প্রয়োজন নেই"
-        },
-        footer: {
-            tagline: "পেজ থেকে ব্র্যান্ড",
-            note: "কোন সাইনআপের প্রয়োজন নেই",
-            about: "UdyoktaStudio বাংলাদেশি Facebook ও Instagram সেলারের জন্য বাস্তব অনলাইন ব্যবসা গড়ে তুলতে সাহায্য করে।",
-            rights: "সর্বস্বত্ব সংরক্ষিত।"
-        },
-        process: {
-            title: "সহজ ৪-টি প্রক্রিয়া",
-            steps: [
-                { num: "০১", title: "সম্পাদনা", desc: "আমরা আপনার ব্যবসা এবং পরিদর্শন বুঝছি" },
-                { num: "০২", title: "ডিজাইন ও নির্মাণ", desc: "আমরা আপনার আধুনিক ওয়েবসাইট তৈরি করি" },
-                { num: "০৩", title: "পর্যালোচনা", desc: "আমরা আপনার প্রতিক্রিয়ার উপর ভিত্তি করে পরিমার্জন করি" },
-                { num: "০৪", title: "লঞ্চ", desc: "আমরা নির্দেশনা ও সহায়তার সাথে লাইভ যাই" }
-            ],
-            timeline: "পরিষ্কার প্রক্রিয়া, দ্রুত ডেলিভারি",
+            note: "সম্পূর্ণ বাংলাদেশি ক্রেতাদের কেনাকাটার আচরণ মাথায় রেখে ডিজাইন করা"
         },
         tech: {
-            title: "আধুনিক প্রযুক্তি দিয়ে নির্মিত",
-            note: "কোন পুরানো টেমপ্লেট নয়। সম্পূর্ণ আধুনিক এবং স্কেলযোগ্য।",
+            title: "আধুনিক প্রযুক্তি দিয়ে নির্মিত",
+            note: "কোন পুরনো টেমপ্লেট নয়। সম্পূর্ণ আধুনিক এবং স্কেলযোগ্য।",
             stack: {
                 frontend: {
                     icon: "⚛️",
@@ -290,32 +282,53 @@ const translations = {
                 }
             }
         },
+        process: {
+            title: "সহজ ৪-ধাপের প্রক্রিয়া",
+            steps: [
+                { num: "০১", title: "ব্যবসা জানা ও বোঝা", desc: "আমরা প্রথমে আপনার প্রোডাক্ট এবং ব্যবসার ধরণ সম্পর্কে বিস্তারিত জানি" },
+                { num: "০২", title: "ডিজাইন ও ডেভেলপমেন্ট", desc: "আপনার ব্র্যান্ডের সাথে মিলিয়ে আধুনিক ওয়েবসাইট তৈরি করি" },
+                { num: "০৩", title: "পর্যালোচনা ও ফিডব্যাক", desc: "আপনার মতামত ও ফিডব্যাকের ভিত্তিতে আমরা সাইটটি পরিমার্জন করি" },
+                { num: "০৪", title: "লাইভ ও লঞ্চ", desc: "প্রয়োজনীয় গাইডলাইন এবং কমপ্লিট সাপোর্ট দিয়ে ওয়েবসাইট লাইভ করি" }
+            ],
+            timeline: "স্বচ্ছ প্রক্রিয়া, দ্রুত ডেলিভারি",
+        },
+        contact: {
+            title: "চলুন, আপনার ব্যবসার জন্য গ্রাহকের বিশ্বাস গড়ে তুলি",
+            subtitle: "কোনো জোরাজুরি নেই, কোনো মিথ্যা প্রতিশ্রুতি নেই। কেবলই ব্যবসার উন্নতির জন্য স্পষ্ট আলোচনা।",
+            whatsapp: "WhatsApp-এ চ্যাট করুন",
+            email: "ইমেইল পাঠান",
+            demo: "ডেমো দেখুন"
+        },
         pricing: {
-            title: "Pricing",
-            badge: "Simple, Transparent Process",
+            title: "প্যাকেজ সমূহ",
+            badge: "সহজ এবং স্বচ্ছ প্যাকেজ রেট",
             starter: {
-                name: "Starter",
-                label: "Most Popular",
-                price: "৳ 5,000",
-                features: ["৫-১০ Products", "Mobile Optimized", "WhatsApp Integration", "Basic Support", "১ সপ্তাহ Delivery"],
-                ctaSuccess: "Thank You!",
-                cta: "Get Started"
+                name: "স্টারটার",
+                label: "জনপ্রিয়",
+                price: "৳ ৫,০০০",
+                features: ["৫-১০টি প্রোডাক্টস", "মোবাইল অপ্টিমাইজড", "WhatsApp ইন্টিগ্রেশন", "বেসিক সাপোর্ট", "১ সপ্তাহ ডেলিভারি"],
+                cta: "শুরু করুন"
             },
             growth: {
-                name: "Growth",
-                label: "Most Popular",
-                price: "৳ 35,000",
-                features: ["Unlimited Products", "Advanced Features", "FB/IG Pixel Setup", "Priority Support", "Analytics Dashboard", "৩ মাস Free Updates"],
-                cta: "Get Started"
+                name: "গ্রোথ",
+                label: "সবচেয়ে জনপ্রিয়",
+                price: "৳ ৩৫,০০০",
+                features: ["আনলিমিটেড প্রোডাক্টস", "অ্যাডভান্সড ফিচারসমূহ", "FB/IG পিক্সেল সেটআপ", "প্রায়োরিটি সাপোর্ট", "অ্যানালিটিক্স ড্যাশবোর্ড", "৩ মাস ফ্রি আপডেট"],
+                cta: "শুরু করুন"
             },
             enterprise: {
-                name: "Enterprise",
-                label: "Most Popular",
-                price: "Custom",
-                caption: "UdyoktaStudio helps Bangladeshi Facebook & Instagram sellers build real online businesses.",
-                features: ["Growth এর সবকিছু", "Payment Gateway", "Custom Integrations", "Dedicated Manager", "Lifetime Updates"],
-                cta: "Let's Talk"
+                name: "এন্টারপ্রাইজ",
+                label: "কাস্টম সリューション",
+                price: "আলোচনা সাপেক্ষে",
+                caption: "UdyoktaStudio বাংলাদেশি Facebook ও Instagram সেলারদের বাস্তব অনলাইন ব্যবসা গড়ে তুলতে সাহায্য করে।",
+                features: ["গ্রোথ প্যাকেজের সবকিছু", "পেমেন্ট গেটওয়ে ইন্টিগ্রেশন", "কাস্টম ইন্টিগ্রেশনসমূহ", "ডেডিকেটেড অ্যাকাউন্ট ম্যানেজার", "লাইফটাইম সিকিউরিটি আপডেট"],
+                cta: "যোগাযোগ করুন"
             }
+        },
+        footer: {
+            tagline: "পেজ থেকে ব্র্যান্ড",
+            about: "UdyoktaStudio বাংলাদেশি Facebook ও Instagram সেলারদের বাস্তব অনলাইন ব্যবসা গড়ে তুলতে সাহায্য করে।",
+            rights: "সর্বস্বত্ব সংরক্ষিত।"
         }
     }
 };

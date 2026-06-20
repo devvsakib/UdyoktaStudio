@@ -1,0 +1,53 @@
+{
+    "storeName": "TrendVibe Fashion",
+    "category": "Clothing & Apparel",
+    "currency": "BDT",
+    "hero": {
+        "title": "Elevate Your Everyday Look",
+        "subtitle": "Discover premium quality outfits crafted for comfort and style.",
+        "ctaText": "Shop Collection",
+        "bannerImage": ""
+    },
+    "products": [
+        {
+            "id": "fash-01",
+            "name": "Premium Cotton Minimalist Tee",
+            "price": 1250,
+            "originalPrice": 1650,
+            "inStock": true,
+            "image": "",
+            "description": "100% combed cotton, breathable fabric perfect for Bangladeshi summer.",
+            "sizes": ["S", "M", "L", "XL"]
+        },
+        {
+            "id": "fash-02",
+            "name": "Slim Fit Denim Jacket",
+            "price": 2450,
+            "originalPrice": 2990,
+            "inStock": true,
+            "image": "",
+            "description": "Classic wash durable denim with premium button closures.",
+            "sizes": ["M", "L", "XL"]
+        },
+        {
+            "id": "fash-03",
+            "name": "Relaxed Fit Cargo Pants",
+            "price": 1850,
+            "originalPrice": 2200,
+            "inStock": false,
+            "image": "",
+            "description": "Multi-pocket utility design with stretchable waist grid.",
+            "sizes": ["30", "32", "34"]
+        }
+    ],
+    "features": [
+        {
+            "title": "Inside Dhaka Delivery",
+            "desc": "Delivery within 24 to 48 hours"
+        },
+        {
+            "title": "Cash on Delivery",
+            "desc": "Pay after checking your product quality"
+        }
+    ]
+}

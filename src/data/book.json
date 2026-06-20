@@ -1,0 +1,39 @@
+{
+    "storeName": "Shubban Publications",
+    "category": "Books & Literature",
+    "currency": "BDT",
+    "hero": {
+        "title": "The Art of Mindful Reading",
+        "subtitle": "Discover the district-level competitive blueprint that reshapes how we absorb knowledge and implement ideas in 2026.",
+        "ctaText": "Get Your Copy",
+        "bannerImage": ""
+    },
+    "product": {
+        "id": "book-01",
+        "name": "The Art of Mindful Reading (Hardcover)",
+        "price": 320,
+        "originalPrice": 450,
+        "inStock": true,
+        "image": "",
+        "author": "Shubban Literary Editorial",
+        "pages": "284 Pages",
+        "publisher": "Shubban Publications",
+        "description": "The official reading guide designed for deep comprehension, structured note-taking, and critical analysis. Perfect for competitive readers and literature enthusiasts looking to master high-speed learning mechanics.",
+        "chapters": [
+            "Chapter 1: The Psychology of Active Learning",
+            "Chapter 2: Speed Reading Without Loss of Focus",
+            "Chapter 3: Structuring Analytical Summaries",
+            "Chapter 4: Retention and Execution Strategies"
+        ]
+    },
+    "features": [
+        {
+            "title": "Premium Hardboard Binding",
+            "desc": "Durable minimalist cover craft built to last generations"
+        },
+        {
+            "title": "Nationwide Delivery",
+            "desc": "Shipped securely via regional courier services directly to your doorstep"
+        }
+    ]
+}

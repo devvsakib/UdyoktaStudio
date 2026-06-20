@@ -1,0 +1,53 @@
+{
+    "storeName": "VoltGear Electronics",
+    "category": "Tech & Gadgets",
+    "currency": "BDT",
+    "hero": {
+        "title": "Next-Gen Gear for Power Users",
+        "subtitle": "Upgrade your lifestyle with premium tech accessories and smart devices.",
+        "ctaText": "View Hot Deals",
+        "bannerImage": ""
+    },
+    "products": [
+        {
+            "id": "gad-01",
+            "name": "Active Noise Cancelling Wireless Earbuds",
+            "price": 3200,
+            "originalPrice": 4500,
+            "inStock": true,
+            "image": "",
+            "description": "Hybrid ANC with up to 30 hours of combined battery backup.",
+            "warranty": "6 Months"
+        },
+        {
+            "id": "gad-02",
+            "name": "Magnetic 10000mAh Power Bank",
+            "price": 2100,
+            "originalPrice": 2800,
+            "inStock": true,
+            "image": "",
+            "description": "22.5W fast charging output with multi-device safety protection.",
+            "warranty": "1 Year"
+        },
+        {
+            "id": "gad-03",
+            "name": "Ergonomic Mechanical Gaming Keyboard",
+            "price": 4200,
+            "originalPrice": 5500,
+            "inStock": true,
+            "image": "",
+            "description": "Hot-swappable red switches with customizable macro keys.",
+            "warranty": "1 Year"
+        }
+    ],
+    "features": [
+        {
+            "title": "Official Warranty",
+            "desc": "Hassle-free replacement claims setup"
+        },
+        {
+            "title": "Secure Checkout",
+            "desc": "Integrated payment gateways and cod verified"
+        }
+    ]
+}

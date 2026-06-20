@@ -9,8 +9,7 @@ function AppProvider({ children }) {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const t = useMemo(() => translations[lang], [lang]);
-console.log(t, "t")
-console.log(lang, "lang")
+
     return (
         <AppContext.Provider value={{ lang, setLang, theme, setTheme, t, mobileMenuOpen, setMobileMenuOpen }}>
             {children}

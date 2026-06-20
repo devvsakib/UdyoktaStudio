@@ -1,0 +1,53 @@
+{
+    "storeName": "GlowRitual Skincare",
+    "category": "Beauty & Personal Care",
+    "currency": "BDT",
+    "hero": {
+        "title": "Your Journey to Radiant Skin",
+        "subtitle": "Dermatologically tested authentic skincare solutions for healthy skin.",
+        "ctaText": "Explore Serums",
+        "bannerImage": ""
+    },
+    "products": [
+        {
+            "id": "cos-01",
+            "name": "Hydrating Hyaluronic Acid Serum",
+            "price": 1450,
+            "originalPrice": 1800,
+            "inStock": true,
+            "image": "",
+            "description": "Deep hydration formula that plumps skin and reduces fine lines.",
+            "volume": "30ml"
+        },
+        {
+            "id": "cos-02",
+            "name": "Centella Soothing Gel Moisturizer",
+            "price": 950,
+            "originalPrice": 1250,
+            "inStock": true,
+            "image": "",
+            "description": "Calms irritated skin and repairs broken skin barriers instantly.",
+            "volume": "100ml"
+        },
+        {
+            "id": "cos-03",
+            "name": "Salicylic Acid Purifying Cleanser",
+            "price": 850,
+            "originalPrice": 1100,
+            "inStock": true,
+            "image": "",
+            "description": "Gentle exfoliating cleanser targeting acne and deeply clogged pores.",
+            "volume": "150ml"
+        }
+    ],
+    "features": [
+        {
+            "title": "100% Authentic",
+            "desc": "Sourced directly from official distributors"
+        },
+        {
+            "title": "Easy Returns",
+            "desc": "7 days return policy for damaged items"
+        }
+    ]
+}
