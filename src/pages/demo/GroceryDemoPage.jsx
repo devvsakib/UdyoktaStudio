@@ -1,11 +1,12 @@
 import { useState, useMemo } from "react";
-import { Star, ShoppingCart, ShieldCheck, Truck, RefreshCw } from "lucide-react";
+import { Star, ShoppingCart, ShieldCheck, Truck, RefreshCw, Sliders } from "lucide-react";
 import GroceryHeader from "@/components/demo/grocery/GroceryHeader";
 import GroceryCart from "@/components/demo/grocery/GroceryCart";
 import GroceryCheckout from "@/components/demo/grocery/GroceryCheckout";
 import GrocerySuccess from "@/components/demo/grocery/GrocerySuccess";
 import GroceryCoupon from "@/components/demo/grocery/GroceryCoupon";
 import ProductQuickView from "@/components/demo/grocery/ProductQuickView";
+import StoreDesignSettings from "@/components/demo/grocery/StoreDesignSettings";
 import groceryData from "@/data/ghorerBazar.json";
 
 export default function GroceryDemoPage() {
@@ -15,11 +16,23 @@ export default function GroceryDemoPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [cart, setCart] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const [isSettingsPanelOpen, setIsSettingsPanelOpen] = useState(false);
 
   const [discountPercentage, setDiscountPercentage] = useState(0);
   const [activeQuickViewProduct, setActiveQuickViewProduct] = useState(null);
 
-  const { storeName, currency, hotline, email, tagline, categories, products } = groceryData;
+  const [designSettings, setDesignSettings] = useState({
+    themeId: "emerald",
+    storeName: "Ghorer Bazar",
+    bannerHeading: "সুস্থ জীবনের জন্য আমাদের খাঁটি ও অর্গানিক খাদ্যপণ্য",
+    primaryGradient: "from-emerald-950 to-teal-900",
+    accentClass: "bg-amber-500 text-slate-950 hover:bg-amber-600",
+    headerBgClass: "bg-emerald-900",
+    fontClass: "font-sans",
+    gridColumns: "grid-cols-3"
+  });
+
+  const { currency, hotline, email, tagline, categories, products } = groceryData;
 
   const filteredProducts = useMemo(() => {
     return products.filter(product => {
@@ -69,9 +82,22 @@ export default function GroceryDemoPage() {
     setActiveOrderId(null);
   };
 
+  const resetDesign = () => {
+    setDesignSettings({
+      themeId: "emerald",
+      storeName: "Ghorer Bazar",
+      bannerHeading: "সুস্থ জীবনের জন্য আমাদের খাঁটি ও অর্গানিক খাদ্যপণ্য",
+      primaryGradient: "from-emerald-950 to-teal-900",
+      accentClass: "bg-amber-500 text-slate-950 hover:bg-amber-600",
+      headerBgClass: "bg-emerald-900",
+      fontClass: "font-sans",
+      gridColumns: "grid-cols-3"
+    });
+  };
+
   if (viewState === "checkout") {
     return (
-      <div className="min-h-screen bg-slate-50 flex flex-col md:flex-row gap-8 items-start max-w-5xl mx-auto px-4 py-10">
+      <div className={`min-h-screen bg-slate-50 flex flex-col md:flex-row gap-8 items-start max-w-5xl mx-auto px-4 py-10 ${designSettings.fontClass}`}>
         <div className="w-full md:w-7/12 space-y-6">
           <GroceryCheckout
             cart={cart}
@@ -92,27 +118,48 @@ export default function GroceryDemoPage() {
   }
 
   return (
-    <div className="min-h-screen bg-slate-50 font-sans text-slate-800 antialiased selection:bg-emerald-600 selection:text-white">
-      <GroceryHeader
-        storeName={storeName}
-        hotline={hotline}
-        email={email}
-        searchQuery={searchQuery}
-        setSearchQuery={setSearchQuery}
-        totalItemsCount={totalItemsCount}
-        onCartOpen={() => setIsCartOpen(true)}
-      />
+    <div className={`min-h-screen bg-slate-50 text-slate-800 antialiased relative ${designSettings.fontClass}`}>
 
-      <section className="bg-gradient-to-br from-emerald-950 to-teal-900 text-white py-14 px-6 text-center space-y-3">
-        <h2 className="text-xl sm:text-3xl font-black tracking-tight leading-tight">সুস্থ জীবনের জন্য আমাদের খাঁটি ও অর্গানিক খাদ্যপণ্য</h2>
+      <button
+        onClick={() => setIsSettingsPanelOpen(!isSettingsPanelOpen)}
+        className="fixed right-6 bottom-24 z-40 bg-slate-900 text-white p-3.5 rounded-full shadow-2xl hover:scale-105 transition-all flex items-center justify-center border border-white/10"
+      >
+        <Sliders size={18} />
+      </button>
+
+      {isSettingsPanelOpen && (
+        <div className="fixed right-6 bottom-40 z-40 w-80 shadow-2xl">
+          {/* 🚀 এখানে অন-চেঞ্জ হ্যান্ডলারে ঠিকঠাক মতো setDesignSettings সেট করা হয়েছে */}
+          <StoreDesignSettings
+            currentSettings={designSettings}
+            onUpdateSettings={(updated) => setDesignSettings(updated)}
+            onResetSettings={resetDesign}
+          />
+        </div>
+      )}
+
+      <div className={designSettings.headerBgClass}>
+        <GroceryHeader
+          storeName={designSettings.storeName}
+          hotline={hotline}
+          email={email}
+          searchQuery={searchQuery}
+          setSearchQuery={setSearchQuery}
+          totalItemsCount={totalItemsCount}
+          onCartOpen={() => setIsCartOpen(true)}
+        />
+      </div>
+
+      <section className={`bg-gradient-to-br ${designSettings.primaryGradient} text-white py-14 px-6 text-center space-y-3`}>
+        <h2 className="text-xl sm:text-3xl font-black tracking-tight leading-tight">{designSettings.bannerHeading}</h2>
         <p className="text-xs text-emerald-200/80 max-w-xl mx-auto leading-relaxed">{tagline}</p>
       </section>
 
       <section className="py-6 bg-white border-b border-slate-100 px-6">
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs font-bold text-slate-900">
-          <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-50"><ShieldCheck className="text-emerald-800" size={18} /> শতভাগ খাঁটি পণ্য</div>
-          <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-50"><Truck className="text-emerald-800" size={18} /> দ্রুত হোম ডেলিভারি</div>
-          <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-50"><RefreshCw className="text-emerald-800" size={18} /> হ্যাপি রিটার্ন পলিসি</div>
+          <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-50"><ShieldCheck size={18} /> শতভাগ খাঁটি পণ্য</div>
+          <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-50"><Truck size={18} /> দ্রুত হোম ডেলিভারি</div>
+          <div className="flex items-center gap-3 p-3 rounded-xl bg-slate-50"><RefreshCw size={18} /> হ্যাপি রিটার্ন পলিসি</div>
         </div>
       </section>
 
@@ -122,7 +169,7 @@ export default function GroceryDemoPage() {
             <button
               key={cat.id}
               onClick={() => setSelectedCategory(cat.id)}
-              className={`text-left px-4 py-2 rounded-xl text-xs font-bold border whitespace-nowrap transition-all ${selectedCategory === cat.id ? "bg-emerald-800 border-emerald-700 text-white" : "bg-white border-slate-200 text-slate-600"
+              className={`text-left px-4 py-2 rounded-xl text-xs font-bold border whitespace-nowrap transition-all ${selectedCategory === cat.id ? "bg-slate-900 border-slate-800 text-white" : "bg-white border-slate-200 text-slate-600"
                 }`}
             >
               {cat.name}
@@ -131,7 +178,7 @@ export default function GroceryDemoPage() {
         </aside>
 
         <section className="md:col-span-3">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className={`grid sm:grid-cols-2 lg:${designSettings.gridColumns} gap-6`}>
             {filteredProducts.map(product => (
               <div key={product.id} className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden flex flex-col hover:shadow-lg transition-all relative group">
                 <div
@@ -153,7 +200,12 @@ export default function GroceryDemoPage() {
                   </div>
                   <div className="flex items-center justify-between pt-2 border-t border-slate-100">
                     <span className="text-sm font-black text-slate-900">{product.price} {currency}</span>
-                    <button onClick={() => addToCart(product)} className="p-2 rounded-lg bg-amber-500 hover:bg-amber-600 text-slate-950 transition-all"><ShoppingCart size={14} /></button>
+                    <button
+                      onClick={() => addToCart(product)}
+                      className={`p-2 rounded-lg transition-all ${designSettings.accentClass}`}
+                    >
+                      <ShoppingCart size={14} />
+                    </button>
                   </div>
                 </div>
               </div>
