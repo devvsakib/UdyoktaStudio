@@ -1,0 +1,216 @@
+{
+    "sectionTitle": {
+        "bn": "প্রিমিয়াম ইসলামিক গ্রাফিক ডিজাইন ও প্রিন্ট এসেটস",
+        "en": "Premium Islamic Graphic Designs & Print Assets"
+    },
+    "sectionTagline": {
+        "bn": "সম্পূর্ণ এডিটেবল সোর্স ফাইলসহ প্রফেশনাল বুক কভার, সোশ্যাল মিডিয়া ব্যানার এবং খুতবা পোস্টার টেমপ্লেট।",
+        "en": "Professional book covers, social media banners, and Khutbah poster templates with fully editable source files."
+    },
+    "currency": "BDT",
+    "designs": [
+        {
+            "id": "dsgn-book-canvas16",
+            "title": {
+                "bn": "ইসলামিক বই প্রি-অর্ডার প্রমোশন ব্যানার",
+                "en": "Islamic Book Pre-Order Promotion Banner"
+            },
+            "category": {
+                "bn": "বুক প্রমোশন ব্যানার",
+                "en": "Book Promotion"
+            },
+            "price": 1200,
+            "originalPrice": 1800,
+            "tier": "PSD / Figma Source File",
+            "previewImage": "/images/design/book_r/Canvas (16).png",
+            "features": {
+                "bn": [
+                    "সোশ্যাল মিডিয়া অপ্টিমাইজড সাইজ",
+                    "সম্পূর্ণ এডিটেবল টেক্সট ও শেপ",
+                    "হাই-রেজোলিউশন এলিমেন্টস",
+                    "ফ্রি ফন্ট লিংক অন্তর্ভুক্ত"
+                ],
+                "en": [
+                    "Social Media Optimized Size",
+                    "Fully Editable Text & Shapes",
+                    "High-Resolution Elements",
+                    "Free Fonts Link Included"
+                ]
+            }
+        },
+        {
+            "id": "dsgn-book-canvas18",
+            "title": {
+                "bn": "১০০% ফ্রি বই বিতরণ ক্যাম্পেইন ব্যানার",
+                "en": "100% Free Book Distribution Campaign Banner"
+            },
+            "category": {
+                "bn": "ক্যাম্পেইন ব্যানার",
+                "en": "Campaign Banner"
+            },
+            "price": 950,
+            "originalPrice": 1500,
+            "tier": "PSD Source File",
+            "previewImage": "/images/design/book_r/Canvas (18).png",
+            "features": {
+                "bn": [
+                    "আকর্ষণীয় পার্পল ভাইব্রেন্ট থিম",
+                    "স্মার্ট অবজেক্ট ইমেজ প্লেসহোল্ডার",
+                    "প্রিন্ট ও সোশ্যাল মিডিয়া রেডি",
+                    "লেয়ারড আর্টওয়ার্ক"
+                ],
+                "en": [
+                    "Attractive Purple Vibrant Theme",
+                    "Smart Object Image Placeholder",
+                    "Print & Social Media Ready",
+                    "Organized Layered Artwork"
+                ]
+            }
+        },
+        {
+            "id": "dsgn-book-canvas23",
+            "title": {
+                "bn": "বুক প্রি-অর্ডার অফার ডার্ক সোশ্যাল ব্যানার",
+                "en": "Book Pre-Order Offer Dark Social Banner"
+            },
+            "category": {
+                "bn": "বুক প্রমোশন ব্যানার",
+                "en": "Book Promotion"
+            },
+            "price": 1100,
+            "originalPrice": 1600,
+            "tier": "PSD / Ai Source File",
+            "previewImage": "/images/design/book_r/Canvas (23).png",
+            "features": {
+                "bn": [
+                    "মডার্ন ডার্ক ও গ্রিন লেআউট",
+                    "সহজ ড্র্যাগ অ্যান্ড ড্রপ সেটআপ",
+                    "৩০০ DPI হাই-কোয়ালিটি",
+                    "এডিটেবল ভেক্টর এলিমেন্ট"
+                ],
+                "en": [
+                    "Modern Dark & Green Layout",
+                    "Easy Drag & Drop Setup",
+                    "300 DPI High-Quality",
+                    "Editable Vector Elements"
+                ]
+            }
+        },
+        {
+            "id": "dsgn-book-canvas32",
+            "title": {
+                "bn": "বুকশপ স্পেশাল অফার (Buy 1 Get 1) ব্যানার",
+                "en": "Bookshop Special Offer (Buy 1 Get 1) Banner"
+            },
+            "category": {
+                "bn": "ডিসকাউন্ট ব্যানার",
+                "en": "Discount Banner"
+            },
+            "price": 850,
+            "originalPrice": 1200,
+            "tier": "Figma Template",
+            "previewImage": "/images/design/book_r/Canvas (32).png",
+            "features": {
+                "bn": [
+                    "ক্লিন ও মিনিমালিস্ট হোয়াইট ব্যাকগ্রাউন্ড",
+                    "QR কোড প্লেসহোল্ডার রেডি",
+                    "ইনস্ট্যান্ট টেক্সট কাস্টমাইজেশন",
+                    "ভেক্টর আইকন সেট"
+                ],
+                "en": [
+                    "Clean & Minimalist White Background",
+                    "QR Code Placeholder Ready",
+                    "Instant Text Customization",
+                    "Vector Icon Set"
+                ]
+            }
+        },
+        {
+            "id": "dsgn-book-canvas38",
+            "title": {
+                "bn": "প্রিমিয়াম থ্রিডি বুক কভার ও প্রমোশন মকআপ",
+                "en": "Premium 3D Book Cover & Promotion Mockup"
+            },
+            "category": {
+                "bn": "বুক কভার ডিজাইন",
+                "en": "Book Cover Design"
+            },
+            "price": 1500,
+            "originalPrice": 2200,
+            "tier": "Exclusive PSD Mockup Included",
+            "previewImage": "/images/design/book_r/Canvas (38).png",
+            "features": {
+                "bn": [
+                    "রিয়েলস্টিক ৩ডি বুক মকআপ",
+                    "প্রিন্ট-রেডি কভার লেআউট",
+                    "কালার ও শ্যাডো কন্ট্রোল লেয়ার",
+                    "হাই-টেক্সচার ব্যাকগ্রাউন্ড"
+                ],
+                "en": [
+                    "Realistic 3D Book Mockup",
+                    "Print-Ready Cover Layout",
+                    "Color & Shadow Control Layers",
+                    "High-Texture Background"
+                ]
+            }
+        },
+        {
+            "id": "dsgn-poster-canvas06",
+            "title": {
+                "bn": "জুম'আর খুতবা ও মাহফিল পোস্টার টেমপ্লেট",
+                "en": "Jummah Khutbah & Mahfil Poster Template"
+            },
+            "category": {
+                "bn": "খুতবা পোস্টার",
+                "en": "Khutbah Poster"
+            },
+            "price": 1350,
+            "originalPrice": 2000,
+            "tier": "Full PSD / Illustrator File",
+            "previewImage": "/images/design/poster_r/Canvas (6).png",
+            "features": {
+                "bn": [
+                    "ইসলামিক ক্যালিগ্রাফি ও শেপস",
+                    "বক্তা/খতিব ইমেজ ফ্রেম রেডি",
+                    "সোশ্যাল মিডিয়া এবং প্রিন্ট বোথ রেডি",
+                    "সহজে পরিবর্তনযোগ্য সময় ও স্থান"
+                ],
+                "en": [
+                    "Islamic Calligraphy & Shapes",
+                    "Speaker/Khatib Image Frame Ready",
+                    "Social Media & Print Both Ready",
+                    "Easily Editable Time & Venue"
+                ]
+            }
+        },
+        {
+            "id": "dsgn-poster-canvas20",
+            "title": {
+                "bn": "মডার্ন জুম'আর খুতবা নোটিশ বোর্ড ব্যানার",
+                "en": "Modern Jummah Khutbah Notice Board Banner"
+            },
+            "category": {
+                "bn": "খুতবা পোস্টার",
+                "en": "Khutbah Poster"
+            },
+            "price": 1400,
+            "originalPrice": 2100,
+            "tier": "PSD Source File",
+            "previewImage": "/images/design/poster_r/Canvas (20).png",
+            "features": {
+                "bn": [
+                    "প্রফেশনাল গ্রিন ও হোয়াইট লেআউট",
+                    "উন্নত টাইপোগ্রাফি আর্টওয়ার্ক",
+                    "স্মার্ট লেয়ার অর্গানাইজেশন",
+                    "প্রিন্ট রেডি CMYK কালার"
+                ],
+                "en": [
+                    "Professional Green & White Layout",
+                    "Advanced Typography Artwork",
+                    "Smart Layer Organization",
+                    "Print Ready CMYK Colors"
+                ]
+            }
+        }
+    ]
+}

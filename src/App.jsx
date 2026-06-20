@@ -5,6 +5,8 @@ import DemoPage from '@/pages/DemoPage'
 import AppProvider from '@/lib/AppProvider'
 import NotFound from '@/pages/NotFound'
 import { AnimatePresence } from 'motion/react'
+import DemoHubPage from "@/pages/demo/DemoHubPage";
+import DesignPage from './pages/DesignPage'
 
 export const uid = () => 'b' + Date.now() + Math.random().toString(36).slice(2, 9)
 
@@ -19,10 +21,12 @@ export default function App() {
                 {/* Main App Routes (Shows Header/Footer) */}
                 <Route path="/" element={<MainLayout />}>
                   <Route index element={<Home />} />
+                  <Route path="demo" element={<DemoPage />} />
+                  <Route path="designs" element={<DemoHubPage />} />
+                  <Route path="design" element={<DesignPage />} />
                 </Route>
 
                 {/* Demo Routes (No Main Header/Footer) */}
-                <Route path="demo" element={<DemoPage />} />
                 <Route path="demo/:slug" element={<DemoPage />} />
 
                 {/* 404 Not Found */}
