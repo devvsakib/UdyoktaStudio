@@ -4,6 +4,8 @@ import GroceryHeader from "@/components/demo/grocery/GroceryHeader";
 import GroceryCart from "@/components/demo/grocery/GroceryCart";
 import GroceryCheckout from "@/components/demo/grocery/GroceryCheckout";
 import GrocerySuccess from "@/components/demo/grocery/GrocerySuccess";
+import GroceryCoupon from "@/components/demo/grocery/GroceryCoupon";
+import ProductQuickView from "@/components/demo/grocery/ProductQuickView";
 import groceryData from "@/data/ghorerBazar.json";
 
 export default function GroceryDemoPage() {
@@ -13,6 +15,9 @@ export default function GroceryDemoPage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [cart, setCart] = useState([]);
   const [isCartOpen, setIsCartOpen] = useState(false);
+
+  const [discountPercentage, setDiscountPercentage] = useState(0);
+  const [activeQuickViewProduct, setActiveQuickViewProduct] = useState(null);
 
   const { storeName, currency, hotline, email, tagline, categories, products } = groceryData;
 
@@ -44,6 +49,12 @@ export default function GroceryDemoPage() {
   };
 
   const cartTotal = useMemo(() => cart.reduce((sum, item) => sum + item.price * item.quantity, 0), [cart]);
+
+  const finalTotal = useMemo(() => {
+    const discountAmount = (cartTotal * discountPercentage) / 100;
+    return cartTotal - discountAmount;
+  }, [cartTotal, discountPercentage]);
+
   const totalItemsCount = useMemo(() => cart.reduce((sum, item) => sum + item.quantity, 0), [cart]);
 
   const handleOrderCompletion = (orderId) => {
@@ -53,19 +64,30 @@ export default function GroceryDemoPage() {
 
   const handleCloseSuccess = () => {
     setCart([]);
+    setDiscountPercentage(0);
     setViewState("shop");
     setActiveOrderId(null);
   };
 
   if (viewState === "checkout") {
     return (
-      <GroceryCheckout
-        cart={cart}
-        cartTotal={cartTotal}
-        currency={currency}
-        onBack={() => setViewState("shop")}
-        onOrderSuccess={handleOrderCompletion}
-      />
+      <div className="min-h-screen bg-slate-50 flex flex-col md:flex-row gap-8 items-start max-w-5xl mx-auto px-4 py-10">
+        <div className="w-full md:w-7/12 space-y-6">
+          <GroceryCheckout
+            cart={cart}
+            cartTotal={finalTotal}
+            currency={currency}
+            onBack={() => setViewState("shop")}
+            onOrderSuccess={handleOrderCompletion}
+          />
+        </div>
+        <div className="w-full md:w-5/12 sticky top-28">
+          <GroceryCoupon
+            onApplyCoupon={(percentage) => setDiscountPercentage(percentage)}
+            currency={currency}
+          />
+        </div>
+      </div>
     );
   }
 
@@ -112,13 +134,21 @@ export default function GroceryDemoPage() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {filteredProducts.map(product => (
               <div key={product.id} className="bg-white border border-slate-200/60 rounded-2xl overflow-hidden flex flex-col hover:shadow-lg transition-all relative group">
-                <div className="aspect-[4/3] bg-slate-100 overflow-hidden">
+                <div
+                  onClick={() => setActiveQuickViewProduct(product)}
+                  className="aspect-[4/3] bg-slate-100 overflow-hidden cursor-pointer"
+                >
                   <img src={product.image} alt={product.name} className="w-full h-full object-cover transition-transform group-hover:scale-103" />
                 </div>
                 <div className="p-4 flex flex-col justify-between flex-grow space-y-3">
                   <div className="space-y-1">
                     <span className="text-[9px] font-bold text-emerald-800 bg-emerald-50 px-2 py-0.5 rounded">{product.weight}</span>
-                    <h4 className="text-xs font-bold text-slate-900 line-clamp-2 min-h-[32px]">{product.name}</h4>
+                    <h4
+                      onClick={() => setActiveQuickViewProduct(product)}
+                      className="text-xs font-bold text-slate-900 line-clamp-2 min-h-[32px] cursor-pointer hover:text-emerald-800 transition-colors"
+                    >
+                      {product.name}
+                    </h4>
                     <div className="flex items-center gap-1 text-amber-500 text-[10px] font-bold"><Star size={10} fill="currentColor" /> {product.rating}</div>
                   </div>
                   <div className="flex items-center justify-between pt-2 border-t border-slate-100">
@@ -147,10 +177,17 @@ export default function GroceryDemoPage() {
         }}
       />
 
+      <ProductQuickView
+        product={activeQuickViewProduct}
+        onClose={() => setActiveQuickViewProduct(null)}
+        onAddToCart={addToCart}
+        currency={currency}
+      />
+
       {viewState === "success" && (
         <GrocerySuccess
           orderId={activeOrderId}
-          orderTotal={cartTotal}
+          orderTotal={finalTotal}
           currency={currency}
           onClose={handleCloseSuccess}
         />
