@@ -7,6 +7,7 @@ const translations = {
             demo: "Demo",
             process: "Process",
             price: "Pricing",
+            design: "Design",
             contact: "Contact"
         },
         hero: {

@@ -2,6 +2,7 @@ import { useApp } from "@/hooks/useApp";
 import { useEffect, useState } from "react";
 import { Moon, Sun, Globe, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import { Link } from "react-router-dom";
 
 function MainHeader() {
     const { lang, setLang, theme, setTheme, t, mobileMenuOpen, setMobileMenuOpen } = useApp();
@@ -56,10 +57,9 @@ function MainHeader() {
                         {navItems.map((item, i) => (
                             <motion.a
                                 key={i}
-                                href={`#${navKeys[i]}`}
                                 whileHover={{ y: -1 }}
-                                className={`transition-colors font-semibold text-sm relative py-1 group ${isDark ? 'text-slate-300 hover:text-white' : 'text-slate-600 hover:text-slate-900'
-                                    }`}
+                                href={!["design", "demo"].includes(navKeys[i]) ? `/#${navKeys[i]}` : `/${navKeys[i]}`}
+                                className={`transition-colors font-semibold text-sm relative py-1 group ${isDark ? 'text-slate-300 hover:text-white' : 'text-slate-600 hover:text-slate-900'}`}
                             >
                                 {item}
                                 <span className={`absolute bottom-0 left-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full ${isDark ? 'bg-purple-400' : 'bg-purple-600'
@@ -110,7 +110,7 @@ function MainHeader() {
                             {navItems.map((item, i) => (
                                 <a
                                     key={i}
-                                    href={`#${navKeys[i]}`}
+                                    href={!["design", "demo"].includes(navKeys[i]) ? `/#${navKeys[i]}` : `/${navKeys[i]}`}
                                     onClick={() => setMobileMenuOpen(false)}
                                     className={`py-2.5 px-4 rounded-xl text-sm font-bold transition-all ${isDark
                                         ? 'text-slate-300 hover:text-white hover:bg-white/5'
