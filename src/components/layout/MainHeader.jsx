@@ -33,21 +33,18 @@ function MainHeader() {
             <nav className="container mx-auto px-5 sm:px-8">
                 <div className="flex items-center justify-between">
 
-                    {/* ব্র্যান্ড লোগো সেকশন */}
                     <motion.a
-                        href="#"
+                        href="/"
                         whileHover={{ scale: 1.02 }}
                         whileTap={{ scale: 0.98 }}
                         className="flex items-center gap-2 cursor-pointer focus:outline-none"
                     >
                         <div className="flex flex-col items-start">
-                            {/* থিম অনুযায়ী লোগো চেঞ্জ করার আর্কিটেকচার */}
                             <img
                                 src={isDark ? "/images/brand_logo_light.png" : "/images/brand_logo_dark.png"}
                                 alt="UdyoktaStudio Logo"
                                 className="h-7 sm:h-8 object-contain"
                             />
-                            {/* ছোট সাব-টেক্সট যা ব্র্যান্ড ভ্যালু বাড়ায় */}
                             <span className={`text-[9px] font-bold tracking-widest uppercase mt-0.5 ${isDark ? 'text-purple-400' : 'text-purple-600'
                                 }`}>
                                 {t?.hero?.badge ? "DIGITAL AGENCY" : "STUDIO"}
@@ -55,7 +52,6 @@ function MainHeader() {
                         </div>
                     </motion.a>
 
-                    {/* ডেস্কটপ নেভিগেশন লিংক সমূহ */}
                     <div className="hidden md:flex items-center gap-8">
                         {navItems.map((item, i) => (
                             <motion.a
@@ -66,17 +62,14 @@ function MainHeader() {
                                     }`}
                             >
                                 {item}
-                                {/* সুন্দর আন্ডারলাইন অ্যানিমেশন ইফেক্ট */}
                                 <span className={`absolute bottom-0 left-0 w-0 h-[2px] transition-all duration-300 group-hover:w-full ${isDark ? 'bg-purple-400' : 'bg-purple-600'
                                     }`} />
                             </motion.a>
                         ))}
                     </div>
 
-                    {/* কন্ট্রোল বাটন সমূহ (ভাষা ও মোবাইল মেনু) */}
                     <div className="flex items-center gap-3">
 
-                        {/* ভাষা পরিবর্তনকারী বাটন */}
                         <motion.button
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -90,7 +83,6 @@ function MainHeader() {
                             {lang === 'en' ? 'বাংলা' : 'EN'}
                         </motion.button>
 
-                        {/* মোবাইল মেনু টগল বাটন */}
                         <button
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                             className={`md:hidden p-2 rounded-xl border transition-colors ${isDark ? 'text-white border-white/10 hover:bg-white/5' : 'text-slate-800 border-slate-200 hover:bg-slate-100'
@@ -102,7 +94,6 @@ function MainHeader() {
                 </div>
             </nav>
 
-            {/* মোবাইল ড্রপডাউন মেনু */}
             <AnimatePresence>
                 {mobileMenuOpen && (
                     <motion.div
