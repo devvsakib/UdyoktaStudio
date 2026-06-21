@@ -57,16 +57,16 @@ export const allDemos = [
     },
     {
         slug: "nature",
-        name: "Premium UI/UX Design Marketplace",
-        desc: "Commercial production-ready interface showcase with customized licensing models and dynamic validation checkout routing.",
-        category: "Design Portfolio & Store",
+        name: "Pure & Organic Naturals",
+        desc: "An eco-friendly storefront highlighting herbal remedies, essential oils, and botanical skincare with fluid organic layouts.",
+        category: "Naturals & Wellness",
         type: "custom"
     },
     {
         slug: "brzen",
-        name: "BrZen",
-        desc: "Commercial production-ready interface showcase with customized licensing models and dynamic validation checkout routing.",
-        category: "Design Portfolio & Store",
+        name: "BrZen Luxury Concept Store",
+        desc: "High-end minimalist e-commerce interface featuring multi-variant selectors, fluid editorial grids, and an optimized single-session checkout flow.",
+        category: "Luxury Fragrance & Footwear",
         type: "custom"
     },
 ];
