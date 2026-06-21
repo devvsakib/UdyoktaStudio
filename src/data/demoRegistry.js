@@ -7,6 +7,7 @@ export const demoComponents = {
     grocery: lazy(() => import('@/pages/demo/GroceryDemoPage')),
     design: lazy(() => import('@/pages/demo/DesignShowcasePage')),
     nature: lazy(() => import('@/pages/demo/NaturalsLanding')),
+    brzen: lazy(() => import('@/pages/demo/BrZen')),
     // ভবিষ্যতে আরেকটি বই বা সিঙ্গেল প্রোডাক্ট যোগ করতে চাইলে জাস্ট এভাবে লিখবেন:
     // mango: lazy(() => import('@/pages/demo/MangoDemoPage')),
 };
@@ -57,6 +58,13 @@ export const allDemos = [
     {
         slug: "nature",
         name: "Premium UI/UX Design Marketplace",
+        desc: "Commercial production-ready interface showcase with customized licensing models and dynamic validation checkout routing.",
+        category: "Design Portfolio & Store",
+        type: "custom"
+    },
+    {
+        slug: "brzen",
+        name: "BrZen",
         desc: "Commercial production-ready interface showcase with customized licensing models and dynamic validation checkout routing.",
         category: "Design Portfolio & Store",
         type: "custom"
