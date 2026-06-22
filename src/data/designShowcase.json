@@ -213,6 +213,37 @@
                     "Print Ready CMYK Colors"
                 ]
             }
-        }
+        },
+                {
+            "id": "dsgn-poster-canvas51",
+            "title": {
+                "bn": "নতুন বই লঞ্চ পোস্টার টেমপ্লেট",
+                "en": "New Book launch Poster Template"
+            },
+            "category": {
+                "bn": "বই পাবলিশ",
+                "en": "Book Launch"
+            },
+            "price": 1250,
+            "originalPrice": 2000,
+            "tier": "Full PSD / Illustrator File",
+            "previewImage": "/images/design/poster_r/Canvas (51).png",
+            "features": {
+                "bn": [
+                    "ইসলামিক ক্যালিগ্রাফি ও শেপস",
+                    "লেখক ইমেজ ফ্রেম রেডি",
+                    "সোশ্যাল মিডিয়া এবং প্রিন্ট বোথ রেডি",
+                    "সহজে পরিবর্তনযোগ্য সময় ও স্থান",
+                    "আরও অনেক কিছু..."
+                ],
+                "en": [
+                    "Islamic Calligraphy & Shapes",
+                    "Author Image Frame Ready",
+                    "Social Media & Print Both Ready",
+                    "Easily Editable Time & Venue",
+                    "and more.."
+                ]
+            }
+        },
     ]
 }
