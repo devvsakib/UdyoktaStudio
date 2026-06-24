@@ -134,3 +134,8 @@
 button {
     cursor: pointer !important;
 }
+
+
+body, html{
+    scrollbar-width: none;
+}
