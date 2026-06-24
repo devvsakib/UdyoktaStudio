@@ -87,8 +87,8 @@ export default function DemoPage() {
                   key={category}
                   onClick={() => setSelectedCategory(category)}
                   className={`px-4 py-1.5 rounded-full text-left text-xs font-medium tracking-wide border transition-all duration-200 ${selectedCategory === category
-                      ? "bg-purple-600 text-white border-purple-500 shadow-lg shadow-purple-600/20"
-                      : "bg-slate-900/60 text-slate-400 border-white/5 hover:border-white/10 hover:text-white"
+                    ? "bg-purple-600 text-white border-purple-500 shadow-lg shadow-purple-600/20"
+                    : "bg-slate-900/60 text-slate-400 border-white/5 hover:border-white/10 hover:text-white"
                     }`}
                 >
                   {category}
@@ -107,7 +107,7 @@ export default function DemoPage() {
                   <span className="text-[10px] font-bold text-purple-400 uppercase tracking-widest block mb-2">
                     {demo.category}
                   </span>
-                  <img src={demo.img} alt={demo.slug} className='w-full rounded-2xl mb-2'/>
+                  <img src={demo.img} alt={demo.slug} className='w-full rounded-2xl mb-2' />
                   <h3 className="text-base font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
                     {demo.name}
                   </h3>

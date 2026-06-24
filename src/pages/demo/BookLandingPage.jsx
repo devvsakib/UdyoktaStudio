@@ -218,11 +218,11 @@ export default function BookLandingPage() {
                     {activeTab === 'author' && (
                         <div className="flex flex-col sm:flex-row gap-6 items-start">
                             <div className="w-20 h-20 bg-[#EADCC9] rounded-full overflow-hidden flex-shrink-0 border-2 border-white shadow-md">
-                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=200&auto=format&fit=crop" alt="Author Headshot" className="w-full h-full object-cover" />
+                                <img src="https://avatars.githubusercontent.com/u/88339569?v=4" alt="Author Headshot" className="w-full h-full object-cover" />
                             </div>
                             <div className="space-y-2">
-                                <h4 className="text-base font-bold text-[#1A1816]">Dr. Helena Sterling</h4>
-                                <p>Helena Sterling is an architectural historian and formal systems designer based out of Zurich. <em>The Structural Horizon</em> is her third full-length novel publication, drawing directly upon her research regarding physical memory preservation algorithms.</p>
+                                <h4 className="text-base font-bold text-[#1A1816]">Dr. Sakib Ahmed</h4>
+                                <p>Sakib Ahmed is an architectural historian and formal systems designer based out of Zurich. <em>The Structural Horizon</em> is her third full-length novel publication, drawing directly upon her research regarding physical memory preservation algorithms.</p>
                             </div>
                         </div>
                     )}
