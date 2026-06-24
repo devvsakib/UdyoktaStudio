@@ -42,9 +42,9 @@ function MainHeader() {
                     >
                         <div className="flex flex-col items-start">
                             <img
-                                src={isDark ? "/images/logo_light.png" : "/images/logo_dark.png"}
+                                src={!isDark ? "/images/logo_light.png" : "/images/logo_dark.png"}
                                 alt="UdyoktaStudio Logo"
-                                className="h-7 sm:h-8 object-contain"
+                                className="h-10 sm:h-12 object-contain"
                             />
                             <span className={`text-[9px] font-bold tracking-widest uppercase mt-0.5 ${isDark ? 'text-purple-400' : 'text-purple-600'
                                 }`}>
