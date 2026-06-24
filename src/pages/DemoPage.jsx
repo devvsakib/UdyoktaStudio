@@ -86,7 +86,7 @@ export default function DemoPage() {
                 <button
                   key={category}
                   onClick={() => setSelectedCategory(category)}
-                  className={`px-4 py-1.5 rounded-full text-xs font-medium tracking-wide border transition-all duration-200 ${selectedCategory === category
+                  className={`px-4 py-1.5 rounded-full text-left text-xs font-medium tracking-wide border transition-all duration-200 ${selectedCategory === category
                       ? "bg-purple-600 text-white border-purple-500 shadow-lg shadow-purple-600/20"
                       : "bg-slate-900/60 text-slate-400 border-white/5 hover:border-white/10 hover:text-white"
                     }`}
