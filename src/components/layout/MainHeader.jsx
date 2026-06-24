@@ -42,7 +42,7 @@ function MainHeader() {
                     >
                         <div className="flex flex-col items-start">
                             <img
-                                src={isDark ? "/images/brand_logo_light.png" : "/images/brand_logo_dark.png"}
+                                src={isDark ? "/images/logo_light.png" : "/images/logo_dark.png"}
                                 alt="UdyoktaStudio Logo"
                                 className="h-7 sm:h-8 object-contain"
                             />
