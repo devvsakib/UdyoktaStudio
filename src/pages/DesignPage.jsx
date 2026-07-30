@@ -16,7 +16,9 @@ export default function DesignPage() {
         { id: "Book Promotion", label: { bn: "বুক প্রমোশন", en: "Book Promotion" } },
         { id: "Book Cover Design", label: { bn: "বুক কভার", en: "Book Covers" } },
         { id: "Khutbah Poster", label: { bn: "খুতবা পোস্টার", en: "Khutbah Posters" } },
-        { id: "Campaign Banner", label: { bn: "ক্যাম্পেইন ব্যানার", en: "Campaign Banners" } }
+        { id: "Campaign Banner", label: { bn: "ক্যাম্পেইন ব্যানার", en: "Campaign Banners" } },
+        { id: "Book Launch", label: { bn: "বুক লঞ্চ", en: "Book Launch" } },
+        { id: "Discount Banner", label: { bn: "ডিসকাউন্ট ব্যানার", en: "Discount Banner" } }
     ];
 
     const filteredDesigns = activeFilter === "all"
