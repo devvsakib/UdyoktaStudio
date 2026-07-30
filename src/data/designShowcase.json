@@ -246,4 +246,33 @@
             }
         }
     ]
-}
+},
+ {
+            "id": "dsgn-book-canvas38",
+            "title": {
+                "bn": "প্রিমিয়াম থ্রিডি বুক কভার ও প্রমোশন মকআপ",
+                "en": "Premium 3D Book Cover & Promotion Mockup"
+            },
+            "category": {
+                "bn": "বুক কভার ডিজাইন",
+                "en": "Book Cover Design"
+            },
+            "price": 1500,
+            "originalPrice": 2200,
+            "tier": "Exclusive PSD Mockup Included",
+            "previewImage": "/images/design/book_r/korunamoyer koruna prapto.png",
+            "features": {
+                "bn": [
+                    "রিয়েলস্টিক ৩ডি বুক মকআপ",
+                    "প্রিন্ট-রেডি কভার লেআউট",
+                    "কালার ও শ্যাডো কন্ট্রোল লেয়ার",
+                    "হাই-টেক্সচার ব্যাকগ্রাউন্ড"
+                ],
+                "en": [
+                    "Realistic 3D Book Mockup",
+                    "Print-Ready Cover Layout",
+                    "Color & Shadow Control Layers",
+                    "High-Texture Background"
+                ]
+            }
+        },
